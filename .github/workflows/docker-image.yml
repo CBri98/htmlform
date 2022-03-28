@@ -16,3 +16,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build -t carbonec/htmlform .
+      run: docker push carbonec/htmlform
