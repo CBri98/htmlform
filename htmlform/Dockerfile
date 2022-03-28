@@ -1,7 +1,7 @@
 FROM python:3
 
 #set della directory per l'app
-WORKDIR ./
+WORKDIR /usr/src/app
 
 #copia tutti i file sul container
 COPY . .
