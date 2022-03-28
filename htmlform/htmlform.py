@@ -10,7 +10,7 @@ def index_2():
 @app.route("/submitted", methods=["GET","POST"])
 def submitted():
     if request.method == "POST":
-        return request.form["user"]
+        return "registrato"
 
     if request.method == "GET":
         return render_template("index_2.html")
