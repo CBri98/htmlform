@@ -4,8 +4,8 @@ import os, cgi, json
 app = Flask(__name__)
 
 @app.route("/")
-def index_2():
-    return render_template("index_2.html")
+def index():
+    return render_template("index.html")
 
 @app.route("/submitted", methods=["GET","POST"])
 def submitted():
@@ -13,7 +13,7 @@ def submitted():
         return request.form["user"]
 
     if request.method == "GET":
-        return render_template("index_2.html")
+        return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
