@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import os, cgi, json
+import os, cgi
 
 app = Flask(__name__)
 
